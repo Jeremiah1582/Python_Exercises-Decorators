@@ -34,8 +34,11 @@ def secure_function(password):
 def simple_function():
     time.sleep(2)
     print("Function executed.")
-
+    
+simple_function()
 # For the challenge
 @secure_function("my_password")
 def secret_function():
-    print("Secret data displayed.")
+    print("Access Granted, your Secret data can be displayed.")
+    
+secret_function()

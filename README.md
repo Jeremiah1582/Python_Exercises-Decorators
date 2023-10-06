@@ -21,12 +21,17 @@ Write a Python decorator that can be added to any function. This decorator shoul
 - If the password is correct, it should proceed with the function execution; otherwise, it should print "Access Denied."
 
 # Example:
+**Expected OUTPUT in terminal:**
+.....Function wrapper called.
+.....Function executed.
+.....Function simple_function took 2.0073 seconds to execute.
+.....Enter the password to run the function: my_password
+.....Secret data displayed.
+
 - Log Function Calls:
 For a function named example_function, it should print: "Function example_function called."
-
 - Time Calculation:
 For the same function, if it took 2.5 seconds to execute, it should print: "Function example_function took 2.5000 seconds to execute."
-
 - (Optional Challenge) Secure Function Calls:
 On calling a secured function, it should prompt: "Enter the password to 
 run the function:"
