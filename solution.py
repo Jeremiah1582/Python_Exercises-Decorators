@@ -3,6 +3,9 @@ import time
 # Decorator to log function call
 def log_function_call(func):
     def wrapper(*args, **kwargs):
+        print('......func....',func)
+        print('......args....',args)
+        print('......kwargs....',kwargs)
         print(f"Function {func.__name__} called.")
         return func(*args, **kwargs)
     return wrapper

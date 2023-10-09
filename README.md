@@ -38,6 +38,6 @@ run the function:"
 If the password is "secure123", proceed; otherwise, print "Access Denied."
 
 # Requirements:
-1)  Use decorators to achieve logging and timing.
+1) Use decorators to achieve logging and timing.
 2) Do not modify the original function's behavior outside of the added functionality.
 3) Ensure that decorators can be applied to any function and will function as described.
