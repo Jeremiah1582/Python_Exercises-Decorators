@@ -32,25 +32,24 @@ def password(user_pass):
     def nested_decorator(func):
         def wrapper(*args, **kwargs):
             if input_pass == user_pass:
-                print('Password Decorator: ! Correct Pass !')
+                print('Password Decorator: ! Correct Pass !, you may run this function')
                 result = func(*args, *kwargs)
-            
+                return result
             else: 
-                print('Password Decorator: !!! password incorrect !!! ')
-            return result
+                print('Password Decorator: !!! password incorrect !!!, function will not run for you ')
+            
         return wrapper
     return nested_decorator
-            
-            
-    
-    
 
 #simple function 
 @calc_timer
 @log_function
-@password(user_password)
-
 def simple_func():
     print('this is the simple function message')
 
 simple_func()
+
+@password(user_password)
+def top_secret():
+    print('this is the top secret function ')
+top_secret()
