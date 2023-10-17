@@ -10,6 +10,10 @@ def log_function_call(func):
         return func(*args, **kwargs)
     return wrapper
 
+
+
+
+
 # Decorator to calculate function execution time
 def calculate_time(func):
     def wrapper(*args, **kwargs):
@@ -19,6 +23,11 @@ def calculate_time(func):
         print(f"Function {func.__name__} took {end_time - start_time:.4f} seconds to execute.")
         return result
     return wrapper
+
+
+
+
+
 
 # Optional Challenge
 def secure_function(password):
@@ -32,13 +41,14 @@ def secure_function(password):
         return wrapper
     return decorator
 
-@log_function_call
+# @log_function_call
 @calculate_time
 def simple_function():
     time.sleep(2)
     print("Function executed.")
     
 simple_function()
+
 # For the challenge
 @secure_function("my_password")
 def secret_function():

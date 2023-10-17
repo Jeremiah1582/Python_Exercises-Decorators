@@ -9,11 +9,11 @@ Write a Python decorator that can be added to any function. This decorator shoul
 # Task:
 1) Log Function Calls:
 - Create a decorator log_function_call.
-- When a function with this decorator is called, it should print: "Function function_name called."
+- When a function with this decorator is called, it should print: "Function <function_name> called."
 
 2) Time Calculation:
 - Enhance the log_function_call decorator or create a new decorator calculate_time.
-- When a function with this decorator is called, it should print: "Function function_name took X.XXXX seconds to execute."
+- When a function with this decorator is called, it should print: "Function <function_name> took X.XXXX seconds to execute."
 
 3) (Optional Challenge) Secure Function Calls:
 - Create a decorator secure_function.
